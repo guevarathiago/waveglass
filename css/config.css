@@ -1,0 +1,9 @@
+:root{
+    --primary:  rgb(195,194,193);
+    --primary-dark: rgb(163, 160, 158);;
+    --secondary: rgb(251,125,37);
+    --secondary-dark: rgb(247, 110, 12);
+    --light:#f0f0f0;
+    --medium:#cacaca;
+    --dark:#a2a2a2;
+}

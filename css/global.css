@@ -1,0 +1,54 @@
+h1, h2, h3, h4,h5,h6{
+    font-weight: 700;
+}
+
+a{
+    color:var(--secondary);
+}
+
+a:hover{
+    color:var(--primary);
+}
+
+.title {
+    text-transform: uppercase;
+}
+
+.subtitle{
+    color:var(--medium);
+    font-weight: 400;
+}
+
+.block{
+    margin-bottom: 120px;  
+}
+
+.button{
+    text-transform: lowercase;
+    font-weight: 500;
+    padding-left: 1.4rem;
+    padding-right: 1.4rem;
+
+}
+
+.button-primay{
+    background-color: var(--secondary);
+    border-color: var(--primary);
+}
+
+.button-primay:hover{
+    background-color: var(--secondary-dark);
+    border-color: var(--secondary-dark);
+}
+
+
+.button-primay-outline{
+    border-color: var(--secondary);
+    color: var(--secondary);
+    
+}
+.button-primay-outline:hover{
+    border-color: var(--secondary-dark);
+    background-color: var(--secondary-dark)
+}
+

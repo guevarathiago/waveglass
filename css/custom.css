@@ -1,0 +1,444 @@
+body, html{
+    font-family: 'Roboto', sans-serif;;
+}
+
+* {
+    scroll-behavior:smooth;
+}
+
+body {
+ 
+    padding-bottom: 5px ;
+}
+
+#header {
+    width: 100%;
+    background: white;
+    transition: 0.2s;
+}
+
+#header.navbar-collapse{
+    width: auto ;
+}
+
+.img-logo {
+    width: 40%;
+    height: 100%;
+}
+
+#header .nav-link{
+    text-transform: uppercase;
+    font-weight: 500;
+    padding-left: 0;
+    padding-right: 0;
+    color:black;
+    border-bottom: solid 4px transparent;
+    
+}
+
+#header .navbar-brand{
+    width: 60%;
+}
+
+#header .nav-link:hover{
+    border-bottom: solid 4px var(--secondary);
+    color: var(--secondary);
+}
+
+
+.sticky {
+    position:fixed ;
+    top: 0;
+    width: 100%;
+    background: black;
+    box-shadow: 0 0 30px 0 rgba(0, 0, 0, 0.5);
+    transition: ease-in box-shadow 0.2s;
+    z-index: 9999;
+    
+}
+
+#slider {
+    background-color: rgba(240, 233, 233, 0.659);
+    background: url(../assets/slider.png) no-repeat fixed center;
+    padding: 160px;
+   
+    
+    
+}
+
+#slider h1{
+    text-transform: uppercase;
+    font-weight: 900;
+    padding-top: 100px;
+    color: rgba(252, 247, 241, 0.934);
+    
+}
+
+#slider h4{
+    
+    font-size: 18px;
+    color: lightgrey;
+}
+
+.btnSlider{
+    color: floralwhite;
+    width: 200px;
+}
+
+
+#imgSobre{
+    width: 100%;
+}
+
+#servicos a.destaque{
+    display: block;
+    background: var(--light);
+    border-radius: 5px;
+    text-align: center;
+    padding: 20px;
+    color: black;
+    text-decoration: none;
+    transition: all ease-out 0.2s;
+
+}
+
+#servicos a.destaque:hover{
+    background: white;
+    box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.12);
+    transform: scale(1.05);
+}
+
+#servicos p{
+    color: var(--primary)    
+}
+
+#servicos a.img-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 200px;
+
+}
+
+#servicos a.img-container img{
+    max-height: 160px;
+}
+
+#textoSobre{
+    padding-left: 70px;
+}
+
+#clientes a.link-cliente {
+    padding: 0 15px;
+    background: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: solid 1px var(--light);
+    height: 100px;
+    transition: ease-out all 0.2s;
+    filter: grayscale(100%);
+    opacity: 0.8;
+
+}
+
+#clientes a.link-cliente:hover{
+    transform: scale(1.2);
+    box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.15);
+    filter: none;
+
+}
+
+#clientes .clientes-texto {
+    display:flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 30px;
+    background-color: var(--light);
+    border-radius: 5px;
+    margin-left: 50px;
+}
+
+#clientes .clientes-texto .imagem {
+    padding: 60px 0;
+    display:flex;
+    align-items: center;
+    margin-left: -70px;
+    font-size: 24px;
+    line-height: 26px;
+    color: var(--dark);
+    font-size: 24px;
+    line-height: 26px;
+}
+
+#clientes .clientes-texto .imagem span {
+    color: var(--secondary);
+    font-size: 110px;
+    line-height: 110px;
+    letter-spacing: -10px;
+    font-weight: 900;
+    display:block;
+}
+
+#clientes .clientes-texto .telefone {
+   display: flex;
+   font-size: 14px;
+   color: var(--dark);
+
+}
+
+#clientes .clientes-texto .telefone span{
+    font-size: 30px;
+    color: var(--dark);
+    font-weight: 900;
+    display: block;
+    margin-top: 10px;
+}
+
+#clientes .telefone img {
+   display:flex;
+    align-items: center;
+    scale: 60%;
+    margin-top: -25px;
+}
+
+#servicos .badge{
+    font-weight: 400;
+}
+
+#servicos .element-item img {
+    border-radius: 5px;
+    transition: all ease-out 0.2s;
+}
+
+#servicos .element-item img:hover {
+    box-shadow: 0 0 30px 0 rgba(0, 0, 0, 0.5);
+}
+
+#servicos .button-group {
+    margin-bottom: 30px;
+}
+
+#servicos .button-group button {
+    background: none;
+    border: none;
+    padding: 0;
+    margin: 0;
+    text-transform: uppercase;
+    font-weight: 700;
+    outline: none;
+}
+
+#servicos .button-group button + button {
+    margin-left: 30px;
+}
+
+#servicos .button-group button.active {
+    color: var(--secondary);
+}
+
+#servicos .button-group button:hover {
+    color: var(--secondary);
+}
+
+.hide {
+    display:none;
+}
+
+.card {
+    max-height: 400px;
+    max-width: 400px;
+}
+
+.grid {
+    height: 330px;
+    width: 400px; 
+}
+
+.lBox {
+    display:none;
+    opacity: 0;
+    
+}
+
+.lBox:target{
+    opacity: 1;
+    display:block;
+    width: 100%;
+    height: 100%;
+    top:0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.8);
+    position: fixed;
+    
+}
+
+
+
+.boxImg{
+    width: 1000px;
+    margin:150px auto;
+    margin-left: 33%;
+    margin-top: 15%;
+
+}
+
+.btnLbox{
+    color: white;
+    font-family: Arial;
+    text-decoration: none;
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    font-size: 40px;
+    text-align: center;
+}
+
+#prev{
+    left: 5%;
+    top: 45%;
+    
+}
+
+#prev:active{
+    transform: scale(1.5);
+    color: var(--secondary);
+}
+
+#next{
+    right: 5%;
+    top: 45%;
+    
+}
+
+#next:active{
+    transform: scale(1.5);
+    color: var(--secondary);
+}
+
+#close{
+    top: 12%;
+    right: 2%;
+    
+    
+}
+
+#close:active{
+    transform: scale(1.5);
+    color: var(--secondary);
+    
+    
+}
+
+.boxImg img {
+    opacity: 0;
+}
+
+.lBox:target .boxImg img {
+    opacity: 1;
+    transition: opacity 0.5s ease-in-out;
+}
+
+.close {
+    visibility: hidden;
+    opacity: 0;
+}
+
+#contato .email{
+    border-radius: 5px;
+    background-color:#F8F9F9;
+    color: black;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 120px 30px;
+}
+
+#contato .email img {
+    position: absolute;
+    left: 30px;
+    top: -30px;
+}
+
+#contato .email form {
+    width: 60%;
+    display: flex;
+}
+
+#contato .email .form-control,
+#contato .email .form-control::placeholder {
+    background: none;
+    color: black;
+}
+
+#btnContato {
+    background-color: lightgray;
+    color: black;
+}
+
+#btnContato:hover {
+    border-color: gray;
+}
+
+#contato ul {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: flex-end;
+}
+
+#contato ul li {
+    display: flex;
+    list-style-type: none;
+    margin-left: 25px;
+}
+
+#contato ul li:first-child {
+    margin-left: 0;
+}
+
+#contato ul li a {
+    display: flex;
+    width: 40px;
+    height: 20px;
+    border-radius: 50px;
+    justify-content: center;
+    align-items: center;
+    background-color: transparent;
+    transition: all ease-out 0.2s;
+}
+
+#contato ul li a:hover {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.8);
+    background-color: #fff;
+}
+
+#contato ul li img {
+    max-height: 20px;
+}
+
+footer .float {
+    position: fixed;
+    width: 60px;
+    height: 60px;
+    bottom: 15px;
+    right: 15px;
+    background-color: #0b8f0b;
+    color: #d3e4c8;
+    border-radius: 50px;
+    text-align: center;
+    font-size: 30px;
+    box-shadow: 2px 2px 3px #535252;
+    z-index: 100;
+  }
+  footer .float:hover {
+    color: white;
+  }
+  footer .my-float {
+    margin-top: 16px;
+  }
+  footer .my-float:hover {
+    color: white;
+  }
